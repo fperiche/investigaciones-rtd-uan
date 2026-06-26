@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Portal Interno Modular | Investigaciones RDT</title>
-<meta name="description" content="Portal interno modular del proyecto Investigaciones RDT para gestión de datos, actividades, nube FOSS HomeEnergy, documentos y calibración.">
+<title>Portal Interno Modular | INVESTIGACIONES</title>
+<meta name="description" content="Portal interno modular del proyecto INVESTIGACIONES para gestión de datos, actividades, nube FOSS HomeEnergy, documentos y calibración.">
 <style>
 :root{
   --ink:#17212b;
@@ -138,6 +138,81 @@ footer a{color:#a9e6f5;font-weight:700}
     url('assets/img/acceso-interno.jpg') center/cover no-repeat !important;
 }
 
+
+/* V5.14: ajuste de textos del encabezado superior */
+.brand-flex{
+  grid-template-columns:280px 1fr !important;
+  gap:20px !important;
+}
+.logo{
+  min-width:0 !important;
+  overflow:hidden !important;
+}
+.logo h1{
+  font-size:22px !important;
+  line-height:1.02 !important;
+  letter-spacing:.01em !important;
+  white-space:nowrap !important;
+  overflow:hidden !important;
+  text-overflow:clip !important;
+}
+.logo p{
+  font-size:12px !important;
+  white-space:nowrap !important;
+}
+.ad{
+  min-width:0 !important;
+  overflow:hidden !important;
+  padding:16px 22px !important;
+}
+.ad strong{
+  display:block !important;
+  font-size:22px !important;
+  line-height:1.08 !important;
+  max-width:720px !important;
+}
+.ad small{
+  display:block !important;
+  font-size:11px !important;
+  letter-spacing:.08em !important;
+}
+.ad .tag{
+  font-size:12px !important;
+  line-height:1.15 !important;
+  padding:9px 12px !important;
+  min-width:118px !important;
+  text-align:left !important;
+}
+@media(max-width:980px){
+  .brand-flex{
+    grid-template-columns:1fr !important;
+  }
+  .logo h1{
+    font-size:24px !important;
+  }
+  .ad strong{
+    font-size:21px !important;
+    max-width:none !important;
+  }
+}
+@media(max-width:620px){
+  .logo h1{
+    font-size:21px !important;
+  }
+  .ad{
+    padding:14px 16px !important;
+  }
+  .ad strong{
+    font-size:18px !important;
+  }
+}
+
+
+/* V5.15: ocultar sigla RDT del encabezado */
+.logo h1 span{
+  display:none !important;
+}
+
 </style>
 </head>
 
@@ -157,7 +232,7 @@ footer a{color:#a9e6f5;font-weight:700}
       <a class="logo" href="index.html">
         <div class="mark">RDT</div>
         <div>
-          <h1>Investigaciones RDT</h1>
+          <h1>INVESTIGACIONES</h1>
           <p>Refrigeración Doméstica Tropical</p>
         </div>
       </a>
@@ -509,7 +584,7 @@ footer a{color:#a9e6f5;font-weight:700}
 
 <footer>
   <div class="wrap foot">
-    <div><strong>Investigaciones RDT</strong><br>Portal interno modular · Proyecto VCTI 2023217</div>
+    <div><strong>INVESTIGACIONES</strong><br>Portal interno modular · Proyecto VCTI 2023217</div>
     <div><a href="index.html">Sitio público</a></div>
   </div>
 </footer>

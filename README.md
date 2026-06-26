@@ -50,3 +50,22 @@ Imágenes principales ajustadas:
 - impacto.jpg: 1400x700 px, 184.6 KB, fuente ChatGPT Image 26 jun 2026, 02_22_51 p.m. (5).png
 
 También se generaron miniaturas verticales en `assets/img/mini/` para uso posterior.
+
+## V5.14
+Ajuste del encabezado superior:
+- Se redujo y controló el tamaño del texto del logotipo.
+- Se ajustó el ancho de la columna de marca.
+- Se redujo el texto del banner para evitar desbordamiento.
+- Se añadieron reglas responsive para pantallas medianas y móviles.
+
+
+## V5.15
+- Se eliminó la sigla `RDT` del título del encabezado principal.
+- El logotipo conserva solo el texto `INVESTIGACIONES`.
+
+## V5.17
+Corrección directa del fondo del cuadro Proyecto:
+- Se reemplazó `assets/img/hero.jpg` por la imagen del refrigerador instrumentado con mapa del Huila.
+- Se actualizó el `style` inline del primer `<article class="story large">`.
+- Se agregó CSS de prioridad para asegurar que el cuadro Proyecto use `assets/img/hero.jpg`.
+- Se incluyó `assets/img/proyecto-huila.jpg` como copia de la imagen original.
