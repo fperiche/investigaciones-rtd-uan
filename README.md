@@ -69,3 +69,10 @@ Corrección directa del fondo del cuadro Proyecto:
 - Se actualizó el `style` inline del primer `<article class="story large">`.
 - Se agregó CSS de prioridad para asegurar que el cuadro Proyecto use `assets/img/hero.jpg`.
 - Se incluyó `assets/img/proyecto-huila.jpg` como copia de la imagen original.
+
+## V5.18
+Corrección de caché para imagen del cuadro Proyecto:
+- Se creó `assets/img/proyecto-huila-v5-18.jpg`.
+- El primer cuadro Proyecto apunta directamente a `assets/img/proyecto-huila-v5-18.jpg`.
+- También se reemplazó `assets/img/hero.jpg` por la misma imagen.
+- Esto evita que GitHub Pages o el navegador sigan mostrando una imagen antigua en caché.
