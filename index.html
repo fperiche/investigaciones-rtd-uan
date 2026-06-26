@@ -86,6 +86,32 @@ footer{background:#111827;color:#cbd5e1;padding:28px 0;border-top:5px solid var(
 .internal-access .internal-hero h2{font-size:24px}
 }
 
+
+/* V5.13: ajuste de encuadre para imágenes reales */
+.hero-grid .story:nth-child(1){
+  --bg:url(assets/img/hero.jpg) center center/cover no-repeat !important;
+}
+.hero-grid .story:nth-child(2){
+  --bg:url(assets/img/nube.jpg) center center/cover no-repeat !important;
+}
+.hero-grid .story:nth-child(3){
+  --bg:url(assets/img/dashboards.jpg) center center/cover no-repeat !important;
+}
+.hero-grid .story:nth-child(4){
+  --bg:url(assets/img/iot.jpg) center center/cover no-repeat !important;
+}
+.hero-grid .story:nth-child(5){
+  --bg:url(assets/img/impacto.jpg) center center/cover no-repeat !important;
+}
+.story:before{
+  background:
+    linear-gradient(0deg,rgba(0,0,0,.74),rgba(0,0,0,.16) 68%),
+    var(--bg,linear-gradient(135deg,#334155,#0ea5e9)) !important;
+}
+.story:after{
+  opacity:.35 !important;
+}
+
 </style></head>
 <body><a class="skip" href="#contenido">Saltar al contenido principal</a><header>
 <div class="topbar"><div class="wrap"><div class="latest"><strong>Proyecto VCTI 2023217</strong><span>Último avance:</span><a href="#nube">nube privada, variables e indicadores energéticos</a></div><div class="social"><span>U</span><span>F</span><span>I</span><span>D</span></div></div></div>
@@ -94,9 +120,9 @@ footer{background:#111827;color:#cbd5e1;padding:28px 0;border-top:5px solid var(
 </header><main id="contenido">
 <section class="hero wrap" id="inicio"><div class="hero-grid">
 <article class="story large" style="--bg:url(assets/img/hero.jpg) center center/cover no-repeat"><div class="text"><span class="cat">Proyecto</span><h1>Investigaciones en Refrigeración Doméstica para Clima Tropical</h1><div class="meta">Monitoreo, análisis y divulgación de variables energéticas y térmicas en refrigeradores domésticos reales.</div></div></article>
-<article class="story" style="--bg:url(assets/img/nube.jpg) center right/cover no-repeat"><div class="text"><span class="cat green">Nube</span><h2>Nube Privada FOSS HomeEnergy</h2><div class="meta">Adquisición, almacenamiento, visualización y análisis de datos</div></div></article>
-<article class="story" style="--bg:url(assets/img/dashboards.jpg) center center/cover no-repeat"><div class="text"><span class="cat">Datos</span><h2>Dashboards energéticos públicos y técnicos</h2><div class="meta">Indicadores agregados, validados y protegidos</div></div></article>
-<article class="story" style="--bg:url(assets/img/iot.jpg) center center/cover no-repeat"><div class="text"><span class="cat orange">IoT</span><h2>Instrumentación IoT de refrigeradores reales</h2><div class="meta">Sensores térmicos, eléctricos y eventos operativos</div></div></article>
+<article class="story" style="--bg:url(assets/img/nube.jpg) center right/cover no-repeat"><div class="text"><span class="cat green">Nube</span><h2>Nube Privada FOSS</h2><div class="meta">Adquisición, almacenamiento, visualización y análisis de datos</div></div></article>
+<article class="story" style="--bg:url(assets/img/dashboards.jpg) center center/cover no-repeat"><div class="text"><span class="cat">Datos</span><h2>Dashboards energéticos</h2><div class="meta">Indicadores agregados, validados y protegidos</div></div></article>
+<article class="story" style="--bg:url(assets/img/iot.jpg) center center/cover no-repeat"><div class="text"><span class="cat orange">IoT</span><h2>Instrumentación IoT</h2><div class="meta">Sensores térmicos, eléctricos y eventos operativos</div></div></article>
 <article class="story" style="--bg:url(assets/img/impacto.jpg) center center/cover no-repeat"><div class="text"><span class="cat dark">Impacto</span><h2>Eficiencia energética en hogares tropicales</h2><div class="meta">Aportes para uso eficiente de refrigeración doméstica</div></div></article>
 </div></section>
 <div class="wrap content"><section>
@@ -104,7 +130,7 @@ footer{background:#111827;color:#cbd5e1;padding:28px 0;border-top:5px solid var(
 <div class="main-grid"><article class="feature-card"><div class="thumb" style="--thumb:linear-gradient(135deg,#e0f2fe,#0284c7)"></div><div class="body"><span class="cat">Investigación</span><h3>Consumo energético en clima tropical</h3><p>El proyecto estudia cómo la temperatura ambiente, las aperturas de puerta, el ciclo del compresor y los hábitos de uso influyen en el consumo eléctrico del refrigerador doméstico.</p><a class="read" href="#metodologia">Leer metodología →</a></div></article>
 <div class="list-news"><article class="mini"><div class="pic" style="--thumb:linear-gradient(135deg,#dcfce7,#16a34a)"></div><div><h4>Variables térmicas, eléctricas y operativas</h4><p>Organización de variables S1–S20 para trazabilidad técnica.</p></div></article><article class="mini"><div class="pic" style="--thumb:linear-gradient(135deg,#cffafe,#0891b2)"></div><div><h4>Nube privada para captura y análisis</h4><p>Arquitectura local con herramientas FOSS y control institucional de datos.</p></div></article><article class="mini"><div class="pic" style="--thumb:linear-gradient(135deg,#fef3c7,#d97706)"></div><div><h4>Dashboards de resultados resumidos</h4><p>Visualizaciones públicas con datos agregados, validados o demostrativos.</p></div></article><article class="mini"><div class="pic" style="--thumb:linear-gradient(135deg,#ede9fe,#7c3aed)"></div><div><h4>Portal interno para gestión</h4><p>Actividades, actas, datos, calibración, documentos y evidencias protegidas.</p></div></article></div></div>
 <section class="block" id="metodologia"><div class="section-head"><span class="label">Metodología e instrumentación</span><span class="line"></span></div><div class="cards-3"><article class="info-card"><h3>1. Refrigerador real</h3><p>Identificación del equipo, condiciones de uso, ambiente tropical y variables relevantes para el análisis energético.</p></article><article class="info-card"><h3>2. Sensores e IoT</h3><p>Medición de temperaturas, potencia, energía, aperturas de puerta, estado del compresor y eventos operativos.</p></article><article class="info-card"><h3>3. Datos y resultados</h3><p>Almacenamiento, limpieza, análisis, visualización y publicación de indicadores resumidos para divulgación.</p></article></div></section>
-<section class="block" id="nube"><div class="section-head"><span class="label">Nube privada</span><span class="line"></span></div><div class="cloud"><span class="cat">Infraestructura Digital</span><h2>Nube Privada FOSS HomeEnergy</h2><p>La nube privada es el núcleo técnico del proyecto. Permite capturar, almacenar, procesar, visualizar y analizar datos de refrigeradores domésticos instrumentados sin depender de plataformas comerciales de créditos limitados. En la vista pública se explica su función; los accesos, datos crudos, direcciones internas y servicios administrativos deben permanecer protegidos.</p><div class="cloud-grid"><div class="cloud-cell">Node-RED<br><small>flujos IoT</small></div><div class="cloud-cell">InfluxDB<br><small>series temporales</small></div><div class="cloud-cell">Grafana<br><small>dashboards</small></div><div class="cloud-cell">JupyterLab<br><small>análisis</small></div></div><div class="notice">Vista pública: descripción general y resultados agregados. Vista interna: configuración, bitácoras, respaldos, datos crudos y evidencias no publicables.</div></div></section>
+<section class="block" id="nube"><div class="section-head"><span class="label">Nube privada</span><span class="line"></span></div><div class="cloud"><span class="cat">Infraestructura Digital</span><h2>Nube Privada FOSS</h2><p>La nube privada es el núcleo técnico del proyecto. Permite capturar, almacenar, procesar, visualizar y analizar datos de refrigeradores domésticos instrumentados sin depender de plataformas comerciales de créditos limitados. En la vista pública se explica su función; los accesos, datos crudos, direcciones internas y servicios administrativos deben permanecer protegidos.</p><div class="cloud-grid"><div class="cloud-cell">Node-RED<br><small>flujos IoT</small></div><div class="cloud-cell">InfluxDB<br><small>series temporales</small></div><div class="cloud-cell">Grafana<br><small>dashboards</small></div><div class="cloud-cell">JupyterLab<br><small>análisis</small></div></div><div class="notice">Vista pública: descripción general y resultados agregados. Vista interna: configuración, bitácoras, respaldos, datos crudos y evidencias no publicables.</div></div></section>
 <section class="block" id="variables"><div class="section-head"><span class="label">Variables</span><span class="line"></span></div><div class="cards-3"><article class="info-card"><h3>Térmicas</h3><p>Temperatura ambiente, refrigerador, congelador y puntos del ciclo de refrigeración.</p></article><article class="info-card"><h3>Eléctricas</h3><p>Voltaje, corriente, potencia, energía acumulada, consumo diario y comportamiento de carga.</p></article><article class="info-card"><h3>Operativas</h3><p>Apertura de puertas, duración de eventos, estado del compresor y recuperación térmica.</p></article></div></section>
 <section class="block" id="resultados"><div class="section-head"><span class="label">Dashboards y resultados</span><span class="line"></span></div><div class="dashboard"><div><span class="cat green">Demo pública</span><h3>Indicadores resumidos del monitoreo</h3><p>Esta sección presenta indicadores agregados, validados o demostrativos. Los datos crudos, técnicos o sensibles se gestionan exclusivamente en el portal interno.</p><a class="btn" href="portal-interno-v5.html">Abrir portal interno</a></div><div class="bars"><div class="bar"><span>kWh/día</span><span class="track"><span class="fill" style="--w:62%"></span></span><strong>1.42</strong></div><div class="bar"><span>Temp. amb.</span><span class="track"><span class="fill" style="--w:78%"></span></span><strong>32°C</strong></div><div class="bar"><span>Aperturas</span><span class="track"><span class="fill" style="--w:44%"></span></span><strong>18</strong></div><div class="bar"><span>Compresor</span><span class="track"><span class="fill" style="--w:56%"></span></span><strong>56%</strong></div></div></div></section>
 <section class="block" id="impacto"><div class="section-head"><span class="label">Impacto</span><span class="line"></span></div><div class="cards-3"><article class="info-card"><h3>Social</h3><p>Recomendaciones para hogares y comprensión del consumo energético cotidiano.</p></article><article class="info-card"><h3>Académico</h3><p>Formación de estudiantes, publicaciones, ponencias y recursos educativos.</p></article><article class="info-card"><h3>Tecnológico</h3><p>Desarrollo de prototipos, tableros, instrumentación IoT y análisis de datos.</p></article></div></section>
